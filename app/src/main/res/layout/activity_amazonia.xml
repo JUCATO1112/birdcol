@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:foregroundTint="#00FFFFFF"
+    tools:context=".ActivityAmazonia">
+
+    <ImageView
+        android:id="@+id/amazoniaSubt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="39dp"
+        android:contentDescription="@string/subAmazonia"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/amazonia_subtitle"
+        tools:ignore="ImageContrastCheck" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amazoniaSubt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundTint="#CDFFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="auto"
+                android:foregroundTint="#9CEFEAEA"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aguila_harpia"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_margin="10sp"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/im"
+                    android:layout_margin="10sp"
+                    app:srcCompat="@drawable/aguila_arpia" />
+
+                <TextView
+                    android:id="@+id/tv_inf1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info"
+                    android:textAlignment="center"
+                    android:layout_margin="10sp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/harpiaSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#003A60"
+                    android:layout_margin="10sp"
+                    android:text="@string/reproducir_sound1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chiribiquite_esmeralda"
+                    android:textAlignment="center"
+                    android:layout_margin="10sp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:contentDescription="@string/im"
+                    app:srcCompat="@drawable/esmeralda" />
+
+                <TextView
+                    android:id="@+id/tv_inf2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="@string/infoEsmeralda"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/esmeraldaSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#003A60"
+                    android:layout_margin="10sp"
+                    android:text="@string/reproducir_sound1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="@string/colibri_topacio"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/im"
+                    android:layout_marginBottom="10sp"
+                    app:srcCompat="@drawable/colibri_topacio" />
+
+                <TextView
+                    android:id="@+id/tv_inf3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="@string/infoTopacio"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/topacioSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#003A60"
+                    android:layout_margin="10sp"
+                    android:text="@string/reproducir_sound1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="@string/lechuzon_de_anteojos"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    app:srcCompat="@drawable/lechuzon_anteojos"
+                    android:contentDescription="@string/lechuzon_anteojos" />
+
+                <TextView
+                    android:id="@+id/tv_inf4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="@string/infoLechuzon"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/lechuzonSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#003A60"
+                    android:layout_margin="10sp"
+                    android:text="@string/reproducir_sound1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="15sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="@string/trepador_colorado"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    app:srcCompat="@drawable/trepador_colorado"
+                    android:contentDescription="@string/img_trepador" />
+
+                <TextView
+                    android:id="@+id/tv_inf5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="@string/infoTepradorC"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/trepadorSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#003A60"
+                    android:layout_margin="10sp"
+                    android:text="@string/reproducir_sound1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

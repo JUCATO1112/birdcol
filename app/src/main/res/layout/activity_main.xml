@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/birdcol"
+        android:textColor="#5D4037"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/subtitle"
+        app:layout_constraintStart_toStartOf="@+id/subtitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/conoce_las_aves_de_colombia_por_regiones"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#F8F8F8"
+        app:layout_constraintBottom_toTopOf="@+id/amazonia_bton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageButton
+        android:id="@+id/insular_bton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/i_bton"
+        android:onClick="navActivity"
+        app:layout_constraintEnd_toStartOf="@+id/amazonia_bton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        app:srcCompat="@drawable/insular_bton"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/amazonia_bton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="48dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/a_bton"
+        android:onClick="navActivity"
+        app:layout_constraintBottom_toTopOf="@+id/caribe_bton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/insular_bton"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        app:srcCompat="@drawable/amazonia_bton"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/andina_bton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/an_bton"
+        android:onClick="navActivity"
+        app:layout_constraintEnd_toStartOf="@+id/caribe_bton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/caribe_bton"
+        app:srcCompat="@drawable/andina_bton"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/caribe_bton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="37dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/p_bton"
+        android:onClick="navActivity"
+        app:layout_constraintBottom_toTopOf="@+id/pacifica_bton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/andina_bton"
+        app:layout_constraintTop_toBottomOf="@+id/amazonia_bton"
+        app:srcCompat="@drawable/caribe_bton"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/orinoquia_bton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="37dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/todo"
+        android:onClick="navActivity"
+        app:layout_constraintEnd_toStartOf="@+id/pacifica_bton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/andina_bton"
+        app:srcCompat="@drawable/orinoquia_bton"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/pacifica_bton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="123dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/pa_bton"
+        android:onClick="navActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orinoquia_bton"
+        app:layout_constraintTop_toBottomOf="@+id/caribe_bton"
+        app:srcCompat="@drawable/pacifica_bton"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
